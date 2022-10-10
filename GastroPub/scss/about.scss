@@ -1,0 +1,72 @@
+/*----- IMPORT ADDITIONAL FILES -----*/
+@import "global";
+/*----- IMPORT ADDITIONAL FILES -----*/
+
+#informations-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: row-reverse;
+	height: 739px;
+	background-color: $site-background;
+
+    .informations-texts-box {
+        display: flex;
+        flex-direction: column;
+        width: 572px;
+        padding: 0 30px;
+        
+        .info-api-texts {
+            color: $info-txt-color;
+        }
+
+        .about-quote {
+            font-size: 24px;
+            color: $info-txt-color;
+            font-family: $font-family_1;
+            font-style: italic;
+            font-weight: lighter;
+        }
+
+        .author-byline {
+            padding-top: 40px;
+            color: $info-txt-color;
+            font-size: 24px;
+            font-style: italic;
+            font-family: $font-family_1;
+            font-weight: lighter;
+            align-self: flex-end;
+        }
+    }
+    
+    #informations-images-wrapper {
+        width: 572px;
+        padding: 0 30px;
+    
+        .about-us-apiImage {
+            width: 417px;
+            height: 285px;
+            padding: 20px 0;
+        }
+    }
+}
+
+/* MEDIA QUERIES FOR ABOUT SECTION START */
+@media screen and (max-width: $lg-breakpoint) {
+    #informations-section {
+        flex-direction: column;
+        height: auto;
+
+        #informations-images-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .informations-texts-box {
+            text-align: center;
+            padding-bottom: 25px;
+        }
+    }
+}
+/* MEDIA QUERIES FOR ABOUT SECTION END */

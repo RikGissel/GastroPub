@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <title>Navbar</title>
+</head>
+<body>
+<!-- MODAL START -->
+<div id="mainModal" style="display: none;">
+    <div class="subModal">
+        <div class="modalWrapper">
+            <div class="close-btn-wrapper">
+                <h2 class="modal-header">Bestil Bord</h2> 
+                <a href="#"><img class="closeBtn" onclick="openModal();" src="../assets/img/closeBtn.png" alt="close button"></a>
+            </div>
+            <input class="name" type="text" placeholder="Navn *" required>
+            <input class="tlf" type="tel" onkeypress="isInputNumber(event)" placeholder="Telefon *" required>
+            <input class="date" type="date" placeholder="Bestilings Dato *" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+            <textarea class="message" name="information" cols="50" rows="8" placeholder="Besked"></textarea>
+            <button type="submit">Send</button>
+        </div>
+    </div>
+</div>
+<!-- MODAL END -->
+
+<!-- NAVBAR START -->
+<nav class="navBar">
+    <nav id="subNav">
+        <nav class="nav-wrapper">
+        <a href="index.html"><img class="logo" src="../assets/img/gastro-pub.svg" alt="logo gastro-pub"></a>
+    <ul class="nav-items">
+        <li class="about li-item">
+            <a href="">Om Os <img class="dropDownArrow" src="../assets/img/dropDownArrow.png" alt=""></a>
+            <ul class="dropDown-content li-item">
+                <a href="../html/about.html">Om Gastropub</a>
+                <a href="../html/team.html">Vores Team</a>
+            </ul>
+        </li>
+        <li class="li-item"><a href="../html/menu.html">Menu</a></li>
+        <li class="li-item"><a href="../html/gallery.html">Galleri</a></li>
+        <li class="li-item"><a href="../html/news.html">Nyheder</a></li>
+        <li class="li-item"><a href="../html/kontakt.html">Kontakt</a></li>
+        <button onclick="openModal();" class="btn">Bestil Bord</button>
+    </ul>
+        </nav>
+    </nav>
+</nav>
+<!-- NAVBAR END -->
+</body>
+</html>

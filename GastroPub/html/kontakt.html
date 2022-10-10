@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/kontakt.css">
+    <link rel="shortcut icon" href="../assets/img/gastro-pub.svg" type="image/png">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('#navbar').load("../components/navbar.html");
+            $('#footer').load("../components/footer.html");
+        });
+    </script>
+</head>
+<body>
+<!-- IMPLEMENT NAVBAR START -->
+<div id="navbar"></div>
+<!-- IMPLEMENT NAVBAR END -->
+
+<!-- TO TOP BUTTON START -->
+<a href="#" onclick="topFunction()"><img  id="toTop" src="../assets/img/toTopArrow.png" alt=""></a>
+<!-- TO TOP BUTTON END -->
+
+<!-- HERO IMAGE START -->
+<section id="hero-data"></section>
+<!-- HERO IMAGE END -->
+
+<!-- CONTACT FORM START -->
+<section class="contact-container">
+    <div class="contact-txt">
+        <div class="first-contact-section">
+            <h2>Kære kunde</h2>
+            <p>Du er altid velkommen til at kontakte os <br> 
+            For spørgsmål angående Deklarations indhold, <br> allegener, eller økologiske forhold. <br> Andre spørgsmål til Gastropub er også velkomne her.
+            </p>
+            <div class="contact-field-wrapper">
+                <input class="name contact-field-1" type="name" name="fname" placeholder="Navn *" required>
+                <input class="tlf contact-field-2" type="tel" name="fname" onkeypress="isInputNumber(event)" placeholder="Telefon *" required>
+                <textarea class="message contact-field-3" type="text" name="messageForm" cols="50" rows="8" placeholder="Besked"></textarea>
+                <button onclick="showNotification(); removeNotification();" class="contact-btn" value="submit" type="submit">Send</button>
+                <h1 class="msg" id="notification"></h1>
+            </div>
+        </div>
+        <section class="sec-contact-section">
+            <div class="icon-wrapper"><i class="icons fa-solid fa-location-dot fa-2x"></i><h2>Valhallavej 23, 8800 Viborg</h2></div>
+            <div class="icon-wrapper"><i class="icons fa-solid fa-phone fa-2x"></i><h2>+45 123 456</h2></div>
+            <div class="icon-wrapper"><i class="icons fa-regular fa-clock fa-2x"></i><h2>Man - Søn, fra 10:00 - 23:00 <p>Frokost servering - 12:00 - 15:00</p> </h2></div>
+        </section>
+    </div>
+</section>
+<!-- CONTACT FORM END -->
+
+<!-- IMPLEMENT FOOTER END -->
+<div id="footer"></div>
+<!-- IMPLEMENT FOOTER END -->
+
+<script type="text/javascript" defer src="../js/scripts.js"></script>
+<script type="text/javascript" defer src="../js/api/footerApi.js"></script>
+<script type="text/javascript" defer src="../js/api/kontaktApi.js"></script>
+
+</body>
+</html>

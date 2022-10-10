@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/team.css">
+    <link rel="shortcut icon" href="../assets/img/gastro-pub.svg" type="image/png">
+    <title>Vores Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('#navbar').load("../components/navbar.html");
+            $('#footer').load("../components/footer.html");
+        });
+    </script>
+</head>
+<body>
+
+    <!-- INSERT CODE FROM NAVBAR COMPONENT -->
+    <div id="navbar"></div>
+    <!-- INSERT CODE FROM NAVBAR COMPONENT -->
+
+    <!-- TO TOP BUTTON START -->
+    <a href="#" onclick="topFunction()"><img  id="toTop" src="../assets/img/toTopArrow.png" alt=""></a>
+    <!-- TO TOP BUTTON END -->
+
+    <!-- STAFF/TEAM HERO START -->
+    <div id="team-hero-image"></div>
+    <!-- STAFF/TEAM HERO END -->
+
+    <!-- STAFF PAGE SECTION -->
+    <section id="cook-section">
+        <section id="head-chef-wrapper">
+            <div id="head-chef-info"></div>
+            <div id="head-chef-photo"></div>
+        </section>
+    </section>
+
+    <section id="staff-members">
+            <div id="staff-members-picture"></div>
+            <div id="staff-members-info"></div>
+    </section>
+    <!-- STAFF PAGE SECTION -->
+
+    <!-- INSERT CODE FROM FOOTER COMPONENT -->
+    <div id="footer"></div>
+    <!-- INSERT CODE FROM FOOTER COMPONENT -->
+    
+    <script type="text/javascript" defer src="../js/scripts.js"></script>
+    <script type="text/javascript" defer src="../js/api/footerApi.js"></script>
+    <script type="text/javascript" defer src="../js/api/teamApi.js"></script>
+</body>
+</html>

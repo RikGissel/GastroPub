@@ -1,0 +1,70 @@
+/*----- IMPORT ADDITIONAL FILES -----*/ /* IMPORT FONTS & FILES */
+@import "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap";
+@import "../components/banner.css";
+/* IMPORT FONTS & FILES */
+/* GLOBAL SCOPE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* GLOBAL SCOPE */
+/*----- IMPORT ADDITIONAL FILES -----*/
+.news-menu-content {
+  display: flex;
+  justify-content: center;
+  background-color: #211E1B;
+  width: 100%;
+}
+.news-menu-content .news-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}
+.news-menu-content .news-content-wrapper .news-img-box img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.news-menu-content .news-content-wrapper .news-txt-box {
+  padding: 65px 0;
+}
+.news-menu-content .news-content-wrapper .news-menu-text {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #CCC4BC;
+}
+.news-menu-content .news-content-wrapper .news-menu-header1 {
+  padding-right: 35px;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+.news-menu-content .news-content-wrapper .news-menu-header2 {
+  font-size: 22px;
+  white-space: nowrap;
+  color: #FFFFFF;
+}
+
+.main-news-content {
+  width: 100%;
+  height: auto;
+  background-color: #2E2925;
+}
+
+/* MEDIA QUERIES FOR NEWS SECTION START */
+@media screen and (max-width: 992px) {
+  .news-content-wrapper {
+    flex-wrap: wrap;
+    margin: 35px 0;
+  }
+}
+/* MEDIA QUERIES FOR NEWS SECTION END *//*# sourceMappingURL=news.css.map */

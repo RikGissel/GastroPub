@@ -1,0 +1,119 @@
+/*----- IMPORT ADDITIONAL FILES -----*/
+@import "global";
+/*----- IMPORT ADDITIONAL FILES -----*/
+
+#cook-section {
+    background-color: $dark-background;
+    height: 739px;
+    
+    #head-chef-wrapper {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 60%;
+        
+        #head-chef-info {
+            height: 485px;
+            line-height: 1.6;
+
+            .chef-description-text {
+                color: $info-txt-color;
+                font-weight: bold;
+                font-size: 18px;
+                font-family: $font-family_2;
+            }
+            
+            
+            .chef-header-text {
+                color: $white;
+                font-size: 48px;
+            }
+        }
+
+        #head-chef-photo {
+            display: flex;
+            align-items: center;
+            height: 739px;
+            padding-left: 30px;
+
+            & > img {
+                height: 485px;
+                width: 485px;
+            }
+        }
+    }
+}
+
+#staff-members {
+    display: flex;
+    flex-direction: column;
+    background-color: $site-background;
+    height: 645px;
+    padding: 25px;
+
+    #staff-members-info, #staff-members-picture {
+        display: flex;
+        justify-content: space-around;
+        height: 50%;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+
+.employees-picture {
+    height: 227px;
+    width: 227px;
+    border-radius: 50%;
+    margin: 33.3px 0;
+}
+
+.employees-txt {
+    color: $info-txt-color;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.3;
+    width: 227px;
+}
+
+/* MEDIA QUERIES START FOR TEAM */
+@media screen and (max-width: $lg-breakpoint) {
+    
+    #staff-members {
+        height: auto;
+        flex-direction: row;
+
+        #staff-members-info, #staff-members-picture {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    #cook-section {
+        height: auto;
+
+        #head-chef-wrapper {
+            flex-direction: column;
+
+            #head-chef-info {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                h1, p {
+                    text-align: center;
+                }
+            }
+
+            #head-chef-photo {
+             position: relative;
+             img {
+                 position: absolute;
+                 top: 0;
+                 transform: translateX(-50%);
+             }
+            }
+        }
+    }
+}
+/* MEDIA QUERIES FOR TEAM END */

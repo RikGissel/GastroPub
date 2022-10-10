@@ -1,0 +1,67 @@
+/*----- IMPORT ADDITIONAL FILES -----*/
+@import "global";
+/*----- IMPORT ADDITIONAL FILES -----*/
+
+.news-menu-content {
+    display: flex;
+    justify-content: center;
+    background-color: $dark-background;
+    width: 100%;
+
+    .news-content-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+
+        .news-img-box {
+
+        img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+    }
+
+        .news-txt-box {
+            padding: 65px 0;
+        }
+
+
+    .news-menu-text {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+        color: $info-txt-color;
+    }
+
+    .news-menu-header1 {
+        padding-right: 35px;
+        font-size: 48px;
+        color: $white;
+    }
+
+    .news-menu-header2 {
+        font-size: 22px;
+        white-space: nowrap;
+        color: $white;
+    }
+}
+}
+
+.main-news-content {
+    width: 100%;
+    height: auto;
+    background-color: $site-background;
+}
+
+/* MEDIA QUERIES FOR NEWS SECTION START */
+@media screen and (max-width: $lg-breakpoint) {
+    .news-content-wrapper {
+        flex-wrap: wrap;
+        margin: 35px 0;
+    }
+
+}
+/* MEDIA QUERIES FOR NEWS SECTION END */

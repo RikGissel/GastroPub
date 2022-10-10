@@ -1,0 +1,78 @@
+/*----- IMPORT ADDITIONAL FILES -----*/ /* IMPORT FONTS & FILES */
+@import "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap";
+@import "../components/banner.css";
+/* IMPORT FONTS & FILES */
+/* GLOBAL SCOPE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* GLOBAL SCOPE */
+/*----- IMPORT ADDITIONAL FILES -----*/
+#informations-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  height: 739px;
+  background-color: #2E2925;
+}
+#informations-section .informations-texts-box {
+  display: flex;
+  flex-direction: column;
+  width: 572px;
+  padding: 0 30px;
+}
+#informations-section .informations-texts-box .info-api-texts {
+  color: #CCC4BC;
+}
+#informations-section .informations-texts-box .about-quote {
+  font-size: 24px;
+  color: #CCC4BC;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: lighter;
+}
+#informations-section .informations-texts-box .author-byline {
+  padding-top: 40px;
+  color: #CCC4BC;
+  font-size: 24px;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+  font-weight: lighter;
+  align-self: flex-end;
+}
+#informations-section #informations-images-wrapper {
+  width: 572px;
+  padding: 0 30px;
+}
+#informations-section #informations-images-wrapper .about-us-apiImage {
+  width: 417px;
+  height: 285px;
+  padding: 20px 0;
+}
+
+/* MEDIA QUERIES FOR ABOUT SECTION START */
+@media screen and (max-width: 992px) {
+  #informations-section {
+    flex-direction: column;
+    height: auto;
+  }
+  #informations-section #informations-images-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #informations-section .informations-texts-box {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+}
+/* MEDIA QUERIES FOR ABOUT SECTION END *//*# sourceMappingURL=about.css.map */

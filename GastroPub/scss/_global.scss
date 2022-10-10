@@ -1,0 +1,32 @@
+/* IMPORT FONTS & FILES */
+@import "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap";
+@import "../components/banner.css";
+/* IMPORT FONTS & FILES */
+
+/* GLOBAL SCOPE */
+$dark-background: #211E1B;
+$black: #000000;
+$white: #FFFFFF;
+$info-txt-color: #CCC4BC;
+$site-background: #2E2925;
+$dark-txt-color: #8A837D;
+$btn-color: #F1B356;
+$overlay-gradient: rgba(0,0,0,0.6);
+$font-family_1: 'Merriweather', serif;
+$font-family_2: 'Crimson Pro', serif;
+$nb-slides: 7;
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+}
+/* GLOBAL SCOPE */

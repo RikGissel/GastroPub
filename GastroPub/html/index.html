@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="shortcut icon" href="../assets/img/gastro-pub.svg" type="image/png">
+    <title>GastroPub</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('#navbar').load("../components/navbar.html");
+            $('#footer').load("../components/footer.html");
+        });
+    </script>
+</head>
+<body>
+
+<!-- IMPLEMENT NAVBAR START -->
+<div id="navbar"></div>
+<!-- IMPLEMENT NAVBAR END -->
+
+<!-- TO TOP BUTTON START -->
+<a href="#" onclick="topFunction();"><img  id="toTop" src="../assets/img/toTopArrow.png" alt=""></a>
+<!-- TO TOP BUTTON END -->
+
+    <!-- HERO START -->
+    <main>
+        <section class="content-container" data-aos="fade-up" data-aos-offset="375" data-aos-easing="ease-in-sine">
+            <h1 class="content-container-title">GastroPub</h1>
+            <p class="content-container-paragraph">Uanset om du skal have en forretningsfrokost, en romantisk <br>
+                middag ved levende lys eller bare en drink efter en travl dag, <br>
+                vil GastroPub altid imødekomme dine behov.
+            </p>
+            <a class="content-container-button" href="../html/about.html"><button>Om Os</button></a>
+        </section>
+
+       
+    </main>
+    <!-- HERO END -->
+
+ <!-- SECTION ONE START -->
+        <section class="sec-container">
+            <div class="content-container" data-aos="fade-up" data-aos-offset="375" data-aos-easing="ease-in-sine">
+                <h1 class="content-container-title">Fantastisk <br class="breaker"><br class="breaker"><br class="breaker">Mad</h1>
+                <p class="content-container-paragraph">Vores retter er tilberedt med friske råvarer fra <br>
+                    danske økologiske gårde og egen køkkenhave. <br>
+                    Der er kærlighed i hver ret fra kokkens hjerte.
+                </p>
+                <a class="content-container-button" href="../html/menu.html"><button>Menu</button></a>
+            </div>
+        </section>
+        <!-- SECTION ONE END -->
+
+        <!-- SECTION TWO START -->
+        <section class="sec-two-container">
+            <div class="content-container" data-aos="fade-up" data-aos-offset="375" data-aos-easing="ease-in-sine">
+                <h1 class="content-container-title">Luksuriøst <br class="breaker"><br class="breaker"><br class="breaker">interiør</h1>
+                <p class="content-container-paragraph">Vores lokaler er indrettet fra det <br>
+                    romantiske møde, til det luksuriøse selskab. <br>
+                    Hyggelige om
+                    givelser til enhver lejlighed.
+                </p>
+                <a class="content-container-button" href="../html/gallery.html"><button>Galleri</button></a>
+            </div>
+        </section>
+    <!-- SECTION TWO END -->
+
+<!-- IMPLEMENT FOOTER END -->
+    <div id="footer"></div>
+<!-- IMPLEMENT FOOTER END -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" defer src="../js/scripts.js"></script>
+    <script type="text/javascript" defer src="../js/api/footerApi.js"></script>
+</body>
+</html>

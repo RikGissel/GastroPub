@@ -1,0 +1,116 @@
+/*----- IMPORT ADDITIONAL FILES -----*/
+@import "global";
+/*----- IMPORT ADDITIONAL FILES -----*/
+
+/* MENU HERO IMG START */
+.hero-menu-img {
+	top: -450px;
+}
+/* MENU HERO IMG END */
+
+/* MENU SECTION START */
+.menu-section-wrapper {
+    background-color: $site-background;
+	width: 100%;
+
+    #menu-sec {
+        display: flex;
+        margin: auto;
+        width: 60%;
+        height: auto;
+
+        #menuBXS1, #menuBXS2 {
+            height: 100%;
+            width: 50%;
+        }
+
+        #menuBXS1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 25px 0;
+            height: inherit;
+        }
+        
+        #menuBXS2 {
+            display: flex;
+            flex-direction: column;
+            padding: 25px 0;
+
+            #menu-content-wrapper {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                height: 100%;
+
+                .inner-menu-content {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .priceTags {
+                        font-size: 22px;
+                        color: $white;
+                        font-family: $font-family_1;
+                        font-weight: bold;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        .menu-titles {
+            font-size: 22px;
+            color: $white;
+            font-family: $font-family_1;
+        }
+    }
+}
+
+
+
+    .menu-plate {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .ingredientTags {
+        font-family: $font-family_2;
+        font-size: 18px;
+        font-weight: bold;
+        color: $info-txt-color;
+
+        /* ----- CSS FOR JQUERY CODE TO ADD HR BEFORE INGREDIENTS ELEMENT ----- */
+        margin: 3px 0px; 
+        border-bottom: 2px solid $info-txt-color;
+        width: 100%;
+        /* ----- CSS FOR JQUERY CODE TO ADD HR BEFORE INGREDIENTS ELEMENT ----- */
+    }
+
+    .dish-headers {
+        font-size: 48px;
+        font-weight: bold;
+        font-family: $font-family_1;
+        color: $info-txt-color;
+    }
+/* MENU SECTION END */
+
+/* MEDIA QUERIES FOR MENU SECTION START */
+@media screen and (max-width: $lg-breakpoint) {
+    #menu-sec {
+        flex-direction: column;
+        align-items: center;
+        
+        #menuBXS1 {
+            align-items: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: $md-breakpoint) {
+    .inner-menu-content {
+        flex-direction: column;
+    }
+}
+/* MEDIA QUERIES FOR MENU SECTION END */
